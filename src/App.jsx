@@ -34,13 +34,13 @@ function App() {
   const formatTime = (time) => {
     let minutes = Math.floor(time / 60);
     let secs = time % 60;
-    return `${minutes}: ${secs < 10 ? "0" : ""}${secs}`;
+    return `${minutes}:${secs < 10 ? "0" : ""}${secs}`;
   };
 
   return (
     <div>
       <h1>Stopwatch</h1>
-      <p>{`Time:${formatTime(secs)}`}</p>
+      <p>{`Time: ${formatTime(secs)}`}</p>
       <button onClick={handleToggle}>{isRunning ? "Stop" : "Start"}</button>
       <button onClick={handleReset}>Reset</button>
     </div>
