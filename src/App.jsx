@@ -34,7 +34,7 @@ function App() {
   const formatTime = (time) => {
     let minutes = Math.floor(time / 60);
     let secs = time % 60;
-    return `${minutes}:${secs < 10 ? "0" : ""}${secs}`;
+    return `${minutes}: ${secs < 10 ? "0" : ""}${secs}`;
   };
 
   return (
